@@ -1,0 +1,14 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:dev": "node --env-file=.env --no-warnings --watch src/server.js",
+    "db:table": "node --env-file=.env src/utils/create-table.js"
+  },
+  "dependencies": {
+    "fastify": "4.25.2",
+    "postgres": "3.4.3"
+  }
+}
